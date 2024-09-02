@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akashcoding</title>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="card">
-    <a href="javascript:void(0);" onclick="showLetter()">
-      <div class="heart"></div>
-    </a>
-  </div>
-
-  <div id="letterCont" class="textCont" style="display: none;">
-    <!-- Letter content will be shown here -->
-  </div>
-
-  <div id="audioPlayer" class="song" style="display: none;">
-    <div class="title">Tap to Play Sound</div>
-    <div class="pause" onclick="togglePlay()">🔇</div>
-    <div class="player">
-      <audio class="audio" src="song.mp3" autoplay type="audio/mp3" loop></audio>
+    <div id="card">
+        <a href="#" onclick="showLetter(); return false;">
+            <div class="heart"></div>
+        </a>
     </div>
-  </div>
-
-  <footer>
-    <a href="https://www.instagram.com/rebel2akash/" target="_blank">AkashCoding</a>
-  </footer>
-
-  <script src="script.js"></script>
+    <div class="textCont" id="letter" style="display: none;">
+        <!-- The letter content will be displayed here -->
+    </div>
+    <div class="song">
+        <div class="title">Tap to Play Sound</div>
+        <div class="pause" onclick="togglePlay()">🔇</div>
+        <div class="player">
+            <audio class="audio" src="song.mp3" autoplay loop></audio>
+        </div>
+    </div>
+    <footer>
+        <a href="https://www.instagram.com/rebel2akash/" target="_blank">AkashCoding</a>
+    </footer>
+    <script src="script.js"></script>
+    <script src="audiocontrol.js"></script>
 </body>
 </html>
