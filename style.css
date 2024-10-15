@@ -46,29 +46,20 @@ body {
 
 .heart:after {
     top: 50%;
-    left: 0;
-    transform: translate(-50%, -50%);
-}
-
-.textCont {
+    left:.textCont {
     font-size: 150%;
     margin-top: 10%;
     margin-left: 5px;
     margin-right: 5px;
-    width: 60%;
-    height: 80%;
+    width: 90%; /* বাক্সের প্রস্থ বেশি করে দিলাম */
+    height: 80vh; /* উচ্চতাকে 80% ভিউপোর্টের উচ্চতা করে দিলাম */
     color: #fff;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7); /* পেছনের কালার যেন সুন্দর হয় */
     padding: 20px;
     border-radius: 10px;
     position: relative;
+    overflow-y: auto; /* লেখার সাথে স্ক্রল করতে পারবে */
 }
-
-.textCont::after {
-    content: "|";
-    animation: blinky 1s linear infinite;
-}
-
 @keyframes blinky {
     0% { opacity: 0; }
     50% { opacity: 1; }
