@@ -1,14 +1,14 @@
-const text = `Dear Neha,
+const text = `প্রিয় নেহা,
 
-I want to say something. Every passing day without you feels like a piece of me is missing. Your laughter, your kindness, your unwavering support—these are the things I find myself craving more than ever. Life seems a little less colorful without your presence by my side. There's a void in my heart that only your friendship can fill.
+তোমার সাথে কিছু বলতে চাই। তোমাকে ছাড়া প্রতিদিন যেন একটা অংশ হারিয়ে যাচ্ছে। তোমার হাসি, তোমার ভালোবাসা, আর তোমার নিঃশর্ত সমর্থন—এই জিনিসগুলোই আমার সবচেয়ে বেশি দরকার। তোমার উপস্থিতি ছাড়া জীবনটা যেন একটু ম্লান হয়ে গেছে। তোমার বন্ধুত্বই সেই শূন্যতা পূরণ করতে পারে।
 
-Do you remember the countless adventures we embarked on? From spontaneous road trips to quiet nights spent stargazing, each memory is etched in my mind like a precious gem. Those moments weren't just fleeting instances; they were the building blocks of a bond that I hold dearer than words can express.
+তুমি কি মনে রেখেছো, আমরা কত অসাধারণ স্মৃতি তৈরি করেছি? হঠাৎ করা সেই ট্রিপগুলো থেকে শুরু করে রাতের আকাশে তারা দেখার মুহূর্তগুলো—প্রতিটা স্মৃতি আমার মনে গেঁথে আছে। এই মুহূর্তগুলো শুধু সময়ের ছোট্ট টুকরো নয়, এগুলো আমাদের বন্ধনের ভিত গড়ে তোলার মূল ভিত্তি।
 
-I miss our late-night conversations that stretched into the early hours of the morning, where we bared our souls and shared our dreams without reservation. There's a unique comfort in being able to be completely yourself with someone, and that's a comfort I find only in you.
+আমি আমাদের গভীর রাতের সেই কথোপকথনগুলোকে খুব মিস করি, যেখানে আমরা একে অপরকে মন খুলে সবকিছু বলতাম। কারও সাথে পুরোপুরি নিজেকে প্রকাশ করার যে আরাম, সেটা কেবল তোমার সাথেই পাই।
 
-Let's make a promise to each other—to never let the miles between us dull the spark of our friendship. I long for the day when we can reunite, to laugh until our stomachs ache and create new memories that will last a lifetime. Until then, I'll hold onto the memories we've made and keep you close in my thoughts and prayers.
+আসো, আমরা একে অপরকে প্রতিশ্রুতি দিই—দূরত্ব যেন আমাদের বন্ধুত্বের উজ্জ্বলতাকে কমিয়ে না ফেলে। আমি অপেক্ষা করছি সেই দিনের জন্য, যেদিন আবার দেখা হবে, আর আমরা হাসতে হাসতে নতুন স্মৃতি তৈরি করবো। ততদিন পর্যন্ত, আমি আমাদের সেই পুরনো স্মৃতিগুলো ধরে রাখবো আর তোমাকে আমার মনের গভীরে স্থান দিয়ে রাখবো।
 
-With each passing day, my anticipation grows stronger, knowing that soon we'll be able to wrap each other in tight hugs and pick up right where we left off. Until that moment arrives, know that you are dearly missed and loved more than words can convey.`;
+প্রতিটা দিন, তোমার সাথে আবার দেখা করার অপেক্ষা করি, যেদিন আমরা একে অপরকে শক্ত করে জড়িয়ে ধরবো আর আগের মতোই আমাদের বন্ধুত্বের গল্প শুরু হবে। সেই মুহূর্ত আসার আগ পর্যন্ত, জানবে, তোমাকে খুব মিস করি আর তুমি আমার হৃদয়ে সবচেয়ে প্রিয়।`;
 
 const paragraph = text.split("");
 let i = 0;
@@ -30,14 +30,7 @@ function showLetter() {
     dashOut(paragraph);
 }
 
-function togglePlay() {
-    const audio = document.querySelector(".audio");
-    const pause = document.querySelector(".pause");
-    if (audio.paused) {
-        audio.play();
-        pause.textContent = "🔇";
-    } else {
-        audio.pause();
-        pause.textContent = "🔊";
-    }
-}
+window.addEventListener('load', () => {
+    const audio = document.querySelector('.audio');
+    audio.play();
+});
