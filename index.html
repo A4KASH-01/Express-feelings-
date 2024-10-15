@@ -9,14 +9,13 @@
 </head>
 <body>
     <div id="card">
-        <a href="#" onclick="showLetter(); return false;">
+        <a href="letter.html">
             <div class="heart"></div>
         </a>
     </div>
-    <div class="textCont" id="letter" style="display: none;">
-        <!-- The letter content will be displayed here -->
-    </div>
     <div class="song">
+        <div class="title">Tap to Play Sound</div>
+        <div class="pause" onclick="togglePlay()">🔇</div>
         <div class="player">
             <audio class="audio" src="song.mp3" autoplay loop></audio>
         </div>
